@@ -88,6 +88,7 @@ jobs:
           -DSKIA_LIBRARY_DIR=$(realpath skia/out/Release-$skia_arch)
     - name: Compiling
       shell: bash
+      working-directory: aseprite
       run: |
         cd build && ninja
     - name: Create release
