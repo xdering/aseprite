@@ -12,7 +12,6 @@ jobs:
   check-version:
     name: Check latest Aseprite release
     runs-on: windows-latest
-    enable_ui: [on]
     outputs:
       download_url: ${{ steps.version_info.outputs.download_url }}
       latest_tag: ${{ steps.version_info.outputs.latest_tag }}
