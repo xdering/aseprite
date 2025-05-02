@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'BuildLog.md'
   workflow_dispatch:
 env:
   BUILD_TYPE: Release
