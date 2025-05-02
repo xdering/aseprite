@@ -84,7 +84,7 @@ jobs:
       run: |
         cd build && ninja
     - name: Upload Artifact (Aseprite.exe)
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: Aseprite
         path: build/bin/aseprite.exe
